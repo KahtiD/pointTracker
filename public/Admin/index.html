@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Punto</title>
+	<link rel="stylesheet" href="./Admin.css"/>
+</head>
+<body>
+	<script  src="../functions.js"></script>
+	<div>
+		<header class="header">
+			<a href="../index.html"><h1>Punto</h1></a>
+		</header>
+	</div>
+		<div style="display: inline-block; vertical-align: top;">
+			<div class="date">
+			<h3 style="margin: 0px; padding: 10px 0px 10px 0px;">Today's Date</h3>
+			<script>document.write(new Date().toLocaleDateString());</script>
+			</div>
+			<div class="navbar">
+				<a href="../src/Dashboard/index.html"><h2>Dashboard</h2></a>
+				<a href="../src/Admin/index.html"><h2>Admin</h2></a>
+				<a href="../src/Archive/index.html"><h2>Achive</h2></a>
+			</div>
+		</div>
+
+		<div class="buttonsBack">
+			<div class="plus">+</div>
+			<div class="minus">-</div>
+		</div>
+			<div class="commentsContainer">
+				<div class="teamTag"></div>
+				<div class="name">
+					<h2 id="name" onload="getComments()"> </h2>
+				</div>
+				<div class="comments">
+					<p id="comment"></p>
+				</div>
+				<button onclick="getComments()"></button>
+			</div>
+
+		<!-- <div class="mainBoard">
+
+					 <p id="teamName"></p>
+
+					 <p id="teamPoints"></p>
+
+					 <button class="TeamPoints" onclick="getRequest()"></button>
+
+					 <button class="WeeklyMessage"onclick="callNodeRed()"></button>
+
+					 <button class="PostNewUser" onclick="addNewTeamMate()"></button>
+
+					 <div>
+
+						 <form  action="http://localhost:3000/postData" method="post">
+
+							 Full name:<br>
+
+							 <input type="text" id="name" name="fullname" value="">
+
+							 <br>
+
+							 Team Name:<br>
+
+							 <input type="text" id="team" name="teamname" value="">
+
+							 <br><br>
+
+							 <input type="submit" value="Submit">
+
+						 </form>
+
+					</div>
+
+			</div> -->
+
+
+				<footer class="footer">
+						<a href="project.html" class="bottomtextcolor"><br><br>Contact Us</a>
+				</footer>
+</body>
+</html>

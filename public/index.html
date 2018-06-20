@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Punto</title>
+	<link rel="stylesheet" href="./stylep.css"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src=".\functions.js"></script>
+</head>
+	<body>
+		<script  src="./functions.js"></script>
+
+		<div>
+			<header class="header">
+				<a href="./index.html"><h1>Punto</h1></a>
+			</header>
+		</div>
+
+
+
+			<div style="display: inline-block; vertical-align: top;">
+				<div class="date">
+				<h3 style="margin: 0px; padding: 10px 0px 10px 0px;">Today's Date</h3>
+				<script>document.write(new Date().toLocaleDateString());</script>
+				</div>
+				<div class="navbar">
+					<a href="../src/Dashboard/index.html"><h2>Dashboard</h2></a>
+					<a href="./Admin/index.html"><h2>Admin</h2></a>
+					<a href="../src/Archive/index.html"><h2>Achive</h2></a>
+				</div>
+			</div>
+
+
+			<div class="teams">
+				<div class="points">
+					<h3 class="number" id="ssPoints"></h3>
+					<h3 class="number" id="avgPoints"></h3>
+					<h3 class="number" id="jdiPoints"></h3>
+					<h3 class="number" id="prPoints"></h3>
+				</div>
+				<div class="teamTable">
+					<div class="barBox" id="barBox0">
+						<div class="bar" id="barSS"></div>
+					</div>
+					<div class="barBox" id="barBox1">
+						<div class="bar" id="barAVG"></div>
+					</div>
+					<div class="barBox" id="barBox2">
+						<div class="bar" id="barJDI"></div>
+					</div>
+					<div class="barBox" id="barBox3">
+						<div class="bar" id="barPR"></div>
+					</div>
+				</div>
+				<div class="teamTitles">
+						<div class="teamNames">Suicide Squad</div>
+						<div class="teamNames">Avengers</div>
+						<div class="teamNames">Jedis</div>
+						<div class="teamNames">Power Rangers</div>
+				 </div>
+				<button class="teamButton" onclick="getTeamPointsRequest()">Update Team Points</button>
+			</div>
+
+			<div class="emLeaderBoard">
+				<div class="teamTable">
+						<div class="secondP"><p>Point</p></div>
+						<div class="firstP"><p>Point</p></div>
+						<div class="thirdP"><p>Point</p></div>
+						<h3 class="secondName">Name</h3>
+						<h3 class="firstName">Name</h3>
+						<h3 class="thirdName">Name</h3>
+						<div class="second"></div>
+						<div class="first"></div>
+						<div class="third"></div>
+				</div>
+				<button class="employeeButton" onclick="">Update Employee LeaderBoard</button>
+			</div>
+
+					<footer class="footer">
+							<a href="project.html" class="bottomtextcolor"><br><br>Contact Us</a>
+					</footer>
+	</body>
+</html>
